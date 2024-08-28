@@ -1,4 +1,4 @@
-# PROJECT NAME
+# Alejas² and Migue Stock Wizard
 
 ***"A project full of frustrations and joys, but above all, lessons"*** now for this project ;)
 
