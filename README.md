@@ -1,10 +1,8 @@
-# Alejas² and Migue Stock Wizard
+# $MA^3$ IndusStock
 
-***"A project full of frustrations and joys, but above all, lessons"*** now for this project ;)
+***"An undertaking of both obstacles and achievements, bringing forth essential lessons"***
 
-**By Fotocopiadora Alejas² and Migue**
-
-(logo?)
+**By Photocopier $MA^3$
 
 ![Logo](loguito.png)
 
