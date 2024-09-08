@@ -11,6 +11,56 @@
 
 ## Development
   (solution to the problem posed, solution explanation, class diagrams with code and class-by-class explanation)
+  ```mermaid
+classDiagram
+    class Inventario {
+        +Tk win
+        +LabelFrame win
+        +ttk.Notebook tabs
+        +ttk.Frame frm1
+        +ttk.Entry idNit
+        +ttk.Entry nombreProveedor
+        +ttk.Entry fechaCompra
+        +ttk.Entry codigo
+        +ttk.Entry nombreProducto
+        +ttk.Entry unidad
+        +ttk.Entry cantidad
+        +ttk.Entry precioCompra
+        +ttk.Entry fechaVencimiento
+        +ttk.Treeview treeProductos
+        +ttk.Style style
+        +ttk.Frame frm2
+        +ttk.Button btnBuscar
+        +ttk.Button btnGuardar
+        +ttk.Button btnEditar
+        +ttk.Button btnEliminar
+        +ttk.Button btnCancelar
+        +sqlite3 db_name
+        +actualiza
+        +is_open_v_eliminar
+        +run_Query(query, parametros)
+        +valida_Id_Nit(event)
+        +valida_Nombre_Proveedor(event)
+        +validaFechaC(event)
+        +valida_Codigo(event)
+        +valida_Nombre_Producto(event)
+        +valida_Unidad(event)
+        +valida_Cantidad(event)
+        +valida_Precio_Compra(event)
+        +validaFechaV(event)
+        +escribirFechaC(event)
+        +escribirFechaV(event)
+        +borrarFechaC()
+        +borrarFechaV()
+        +search_Button()
+        +record_Button()
+        +eliminar_Button()
+        +carga_Datos()
+        +adiciona_Registro(event)
+        +actualizar_datos()
+        +elimina_Registro(obj)
+    }
+```
 
   El problema se abordó diseñando una aplicación de gestión de inventario en Python que se enfoca en la administración eficiente de productos y proveedores. Para plantear la solución, se creó una estructura  donde una clase principal gestiona las operaciones fundamentales del sistema, como el manejo de datos y la interacción con el usuario. Se implementaron métodos para validar información, realizar operaciones CRUD (crear, leer, actualizar, eliminar) y manejar la interfaz gráfica. Además, se incluyeron características adicionales como la carga masiva de registros, la persistencia de datos mediante una base de datos y la generación de reportes. Este enfoque permite una gestión integral del inventario, garantizando la integridad de los datos y una experiencia de usuario fluida.
 
