@@ -61,6 +61,81 @@ classDiagram
         +elimina_Registro(obj)
     }
 ```
+# Último diagrama con las clases separadas por funciones.
+## Clase Databasebuild
+
+classDiagram
+    class DataBaseBuild {
+        +String db_name = 'inventario.db'
+        +__init__()
+        +database_build()
+        +run_Query(query, parametros)
+        +accion_Buscar(seleccion, tabla, condicion, valoresdecodicion)
+        +accion_Eliminar(tabla, condicion, valores_de_la_condicion)
+        +insertar_Proveedor(id, nombre_proveedor, fechaCompra)
+        +insertar_Producto(IdNit, Codigo, nombreProducto, und, cantidad, precio, fechaVencimiento)
+        +actualizar_Proveedor(values)
+        +actualizar_Producto(values)
+        +cargar_Proveedor(id)
+        +cargar_Producto(producto)
+        +change_Nulls_Fetchone(lista)
+        +change_Nulls_Fetchall(lista)
+        +change_Emptystring_To_Null(lista)
+    }
+
+## Clase DataValidator
+```marmaid
+classDiagram
+    class DataValidator {
+        +__init__()
+        +valida_Id_Nit(event)
+        +valida_Nombre_Proveedor(event)
+        +validaFechaC(event)
+        +escribirFechaC(event)
+        +borrarFechaC()
+        +valida_Codigo(event)
+        +valida_Nombre_Producto(event)
+        +valida_Unidad(event)
+        +valida_Cantidad(event)
+        +valida_Precio_Compra(event)
+        +validaFechaV(event)
+        +escribirFechaV(event)
+        +borrarFechaV()
+        +validar_ID()
+        +validar_Cod()
+    }
+```
+## Clase Main Window 
+```marmaid
+classDiagram
+    class MainWindow {
+        +DataBaseBuild database
+        +DataValidator validator
+        +tk.Tk win
+        +init_UI()
+        +run()
+        +init_UI()
+        +limpia_Campos()
+        +limpia_Treeview()
+        +cargar_Datos_Treeview(db_rows)
+        +search_Button()
+        +record_Button()
+        +cancel_Button_Main_Win()
+        +reset_fecha(campo_fecha)
+        +edit_Button()
+        +adiciona_Registro(event)
+        +carga_Datos()
+        +actualizar_datos()
+        +eliminar_Button()
+        +elimina_Registro(obj)
+        +abrir_Ventana_Eliminar()
+        +salir_ventana_eliminar()
+        +continuar_Button()
+        +btn_yes()
+        +btn_no()
+    }
+```
+
 
   El problema se abordó diseñando una aplicación de gestión de inventario en Python que se enfoca en la administración eficiente de productos y proveedores. Para plantear la solución, se creó una estructura  donde una clase principal gestiona las operaciones fundamentales del sistema, como el manejo de datos y la interacción con el usuario. Se implementaron métodos para validar información, realizar operaciones CRUD (crear, leer, actualizar, eliminar) y manejar la interfaz gráfica. Además, se incluyeron características adicionales como la carga masiva de registros, la persistencia de datos mediante una base de datos y la generación de reportes. Este enfoque permite una gestión integral del inventario, garantizando la integridad de los datos y una experiencia de usuario fluida.
 
