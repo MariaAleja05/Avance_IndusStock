@@ -63,7 +63,7 @@ classDiagram
 ```
 # Último diagrama con las clases separadas por funciones.
 ## Clase Databasebuild
-
+```mermaid
 classDiagram
     class DataBaseBuild {
         +String db_name = 'inventario.db'
@@ -82,9 +82,9 @@ classDiagram
         +change_Nulls_Fetchall(lista)
         +change_Emptystring_To_Null(lista)
     }
-
+```
 ## Clase DataValidator
-```marmaid
+```mermaid
 classDiagram
     class DataValidator {
         +__init__()
@@ -104,9 +104,10 @@ classDiagram
         +validar_ID()
         +validar_Cod()
     }
+
 ```
 ## Clase Main Window 
-```marmaid
+```mermaid
 classDiagram
     class MainWindow {
         +DataBaseBuild database
@@ -134,6 +135,8 @@ classDiagram
         +btn_yes()
         +btn_no()
     }
+
+
 ```
 
 
