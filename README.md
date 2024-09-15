@@ -7,11 +7,7 @@
 ![Logo](loguito.png)
 
 ## Planning
- 
-
-## Development
-  (solution to the problem posed, solution explanation, class diagrams with code and class-by-class explanation)
-  ```mermaid
+   ```mermaid
 classDiagram
     class Inventario {
         +Tk win
@@ -139,7 +135,7 @@ classDiagram
 
 ```
 
-
+## Development
   El problema se abordó diseñando una aplicación de gestión de inventario en Python que se enfoca en la administración eficiente de productos y proveedores. Para plantear la solución, se creó una estructura  donde una clase principal gestiona las operaciones fundamentales del sistema, como el manejo de datos y la interacción con el usuario. Se implementaron métodos para validar información, realizar operaciones CRUD (crear, leer, actualizar, eliminar) y manejar la interfaz gráfica. Además, se incluyeron características adicionales como la carga masiva de registros, la persistencia de datos mediante una base de datos y la generación de reportes. Este enfoque permite una gestión integral del inventario, garantizando la integridad de los datos y una experiencia de usuario fluida.
 
 
